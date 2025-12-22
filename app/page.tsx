@@ -23,18 +23,20 @@ type Project = {
 
 const pillars: Pillar[] = [
   {
-    title: "Problem Solving",
-    subtitle: "Thorough understanding of technology.",
+    title: "Precision",
+    subtitle: "Scientific Rigor",
     blurb: (
       <ul className="list-disc pl-6 space-y-2">
-        <li>
-          Using statistics, algorithms, and data structures to solve problems and answer important questions
-        </li>
-        <li>Translating real-world questions into analytical and computational tasks</li>
-        <li>Writing precise, clean, readable, and high-performance code</li>
-        <li>Combining theoretical understanding with practical implementation</li>
-        <li>Iterating solutions based on available evidence and thorough testing</li>
+        <li> Probability theory and statistical inference</li>
+        <li>Linear & logistic regressions</li>
+        <li>Hypothesis testing and confidence intervals</li>
+        <li>Bias–variance tradeoff and model evaluation</li>
+        <li> Experimental design and causal reasoning </li>
+        <li>Data cleaning, preprocessing, and feature engineering</li>
+       <li>Exploratory Data Analysis (EDA)</li>
+        <li>Handling missing data and outliers</li>
       </ul>
+      
     ),
     bg: "bg-[#E6F2EA]",
     href: "/",
