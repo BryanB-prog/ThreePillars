@@ -36,12 +36,7 @@ const pillars: Pillar[] = [
 ),
     bg: "bg-[#E6F2EA]",
     href: "/",
-    points: [
-  "Quality",
-  isNew ? "New feature" : undefined,
-  "Accuracy",
-].filter((p): p is string => Boolean(p)),
-  },
+     },
   {
     title: "Precision",
     subtitle: "Accuracy and Clarity",
