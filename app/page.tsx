@@ -40,7 +40,15 @@ const pillars: Pillar[] = [
     title: "Moral Excellence",
     subtitle: "",
     blurb:
-      "We affirm an open, pluralistic, and democratic society grounded in human rights, justice, and fairness. We support the separation of church and state, respect for privacy, and the dignity and autonomy of mature individuals. Humanist ethics values compassion, responsibility, and moral excellence, guided by reason, dialogue, and an understanding of consequences. We strive for the common good of humanity, care for the Earth and other species, oppose discrimination and intolerance, and commit to nurturing reason and empathy across generations.",
+      "<ul>
+  <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
+  <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
+  <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
+  <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
+  <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
+  <li>Supporting the moral education of children, fostering empathy, critical thinking, and compassion</li>
+  <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
+</ul>",
     bg: "bg-[#E6F2EA]",
     href: "/ethics",
     points: ["Human dignity over metrics", "Bias & harm analysis", "Privacy & consent", "Responsible evaluation"],
