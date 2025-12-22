@@ -48,7 +48,13 @@ const pillars: Pillar[] = [
     title: "Human Betterment",
     subtitle: "Using knowledge to reduce suffering and expand opportunity.",
     blurb:
-      "We aim to improve real lives—measurably and respectfully. That includes reducing preventable suffering, protecting the vulnerable, and building conditions where people can flourish. We are committed to the reduction and eventual elimination of poverty, extreme deprivation, and gross income inequality, and to expanding fair access to education, healthcare, and meaningful opportunity—while caring for the world we share.",
+        <ul className="list-disc pl-6 space-y-2">
+   <li>Using knowledge to reduce suffering and expand opportunity</li>
+     <li>Working toward the end of poverty and related problems</li>
+    <li>Reducing gross income inequality</li>
+    <li>Expanding fair access to education, healthcare, and meaningful opportunity</li>
+    <li>Stewardship of the environment for future generations</li>
+  </ul>,
     bg: "bg-[#EEF4E8]",
     href: "/betterment",
     points: [
@@ -62,7 +68,16 @@ const pillars: Pillar[] = [
     title: "Technical & Scientific Rigor",
     subtitle: "Truth-seeking methods that hold up under scrutiny.",
     blurb:
-      "We commit to evidence-based reasoning, transparent assumptions, and methods that can be tested and repeated. We are skeptical of untested claims and willing to revise beliefs when better evidence appears. In practice, this means reproducibility, sound statistics, careful measurement, and clear communication—so work remains trustworthy, interpretable, and accountable.",
+    <ul className="list-disc pl-6 space-y-2">
+<li>Evidence-based reasoning and empirical validation</li>
+    <li>Transparent assumptions and clear documentation</li>
+    <li>Methods that can be tested, repeated, and audited</li>
+    <li>Skepticism toward untested claims</li>
+    <li>Willingness to revise conclusions when better evidence appears</li>
+    <li>Reproducibility, sound statistics, careful measurement</li>
+    <li>Clear communication for interpretability and accountability</li>
+      
+  </ul>,
     bg: "bg-[#DFF0D8]",
     href: "/rigor",
     points: [
