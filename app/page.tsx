@@ -129,12 +129,13 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
   return (
     <Link
       href={p.href}
-      className={[
-        "group relative block h-[460px] overflow-hidden rounded-2xl border border-black/10",
-        "shadow-[0_14px_30px_-18px_rgba(0,0,0,0.35)] transition-transform",
-        "hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/40",
-        p.bg,
-      ].join(" ")}
+     className={[
+  "group relative block min-h-[560px] overflow-visible rounded-2xl border border-black/10",
+  "shadow-[0_14px_30px_-18px_rgba(0,0,0,0.35)] transition-transform",
+  "hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/40",
+  p.bg,
+].join(" ")}
+
       aria-label={`Open ${p.title}`}
     >
       {/* soft hover glow */}
