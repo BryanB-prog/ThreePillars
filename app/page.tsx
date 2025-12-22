@@ -22,60 +22,55 @@ type Project = {
 
 const pillars: Pillar[] = [
   {
-    title: "Moral Excellence",
-    subtitle: "Ethics with empathy, dignity, and accountability.",
+    title: "Problem Solving",
+    subtitle: "Thorough Understanding of Technology.",
  blurb: (
   <ul className="list-disc pl-6 space-y-2">
-    <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
-    <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
-    <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
-    <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
-    <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
-    <li>Supporting moral education that fosters empathy, critical thinking, and compassion</li>
-    <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
+    <li>Using statistics, algorithms, and data structures to solve problems and answer important questions</li>
+    <li>Translating real-world questions into analytical and computational tasks</li>
+    <li>Precise, clean, easy to read, and high performace code</li>
+    <li>Combining theoretical understanding with practical implementation</li>
+    <li>Iterating solutions based on available evidence and thorough testing</li>
+    
   </ul>
 ),
     bg: "bg-[#E6F2EA]",
     href: "/ethics",
     points: [
-      "Human dignity over metrics",
-      "Bias & harm analysis",
-      "Privacy & consent",
-      "Responsible evaluation",
+      "Accurate Data Analysis",
+      "Precision",
+      "Clean, Efficent Code",
+      "Responsible Use of Information",
     ],
   },
   {
-    title: "Human Betterment",
-    subtitle: "Using knowledge to reduce suffering and expand opportunity.",
+    title: "Precision",
+    subtitle: Accuracy and Clarity.",
     blurb:
         <ul className="list-disc pl-6 space-y-2">
-   <li>Using knowledge to reduce suffering and expand opportunity</li>
-     <li>Working toward the end of poverty and related problems</li>
-    <li>Reducing gross income inequality</li>
-    <li>Expanding fair access to education, healthcare, and meaningful opportunity</li>
-    <li>Stewardship of the environment for future generations</li>
+   <li>Data quality through validation, cleaning, and verification</li>
+   <li>Clear, reproducible, and well-documented code</li>
+   <li>Defensible, interpretable, and trustworthy results </li>
+   
   </ul>,
     bg: "bg-[#EEF4E8]",
     href: "/betterment",
     points: [
-      "End poverty & deprivation",
-      "Reduce extreme inequality",
-      "Access to education & care",
-      "Stewardship for future generations",
+      "Quality",
+      "Clarity",
+      "Accuracy",
+      ,
     ],
   },
   {
-    title: "Technical & Scientific Rigor",
-    subtitle: "Truth-seeking methods that hold up under scrutiny.",
+    title: "Scientific Rigor",
+    subtitle: "Methods that hold up under scrutiny.",
     blurb:
     <ul className="list-disc pl-6 space-y-2">
 <li>Evidence-based reasoning and empirical validation</li>
-    <li>Transparent assumptions and clear documentation</li>
-    <li>Methods that can be tested, repeated, and audited</li>
-    <li>Skepticism toward untested claims</li>
-    <li>Willingness to revise conclusions when better evidence appears</li>
-    <li>Reproducibility, sound statistics, careful measurement</li>
-    <li>Clear communication for interpretability and accountability</li>
+<li>Transparent assumptions and clear documentation</li>
+<li>Reproducibility, sound statistics, careful measurement</li>
+<li>Clear communication for interpretability and accountability</li>
       
   </ul>,
     bg: "bg-[#DFF0D8]",
