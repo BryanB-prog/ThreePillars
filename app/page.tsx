@@ -45,7 +45,7 @@ const pillars: Pillar[] = [
   },
   {
     title: "Precision",
-    subtitle: Accuracy and Clarity",
+    subtitle: "Accuracy and Clarity",
     blurb:
         <ul className="list-disc pl-6 space-y-2">
    <li>Data quality through validation, cleaning, and verification</li>
