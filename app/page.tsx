@@ -1,91 +1,47 @@
-// app/page.tsx
-// Sentropy — Modern / Data Humanism homepage (Next.js App Router + Tailwind)
-
-import Link from "next/link";
-import React from "react";
-
-type Pillar = {
-  title: string;
-  subtitle: string;
-  blurb: React.ReactNode; // allows string OR JSX (like <ul>)
-  bg: string; // Tailwind bg class
-  href: string;
-  points: string[];
-  hasArt?: boolean;
-};
-
-type Project = {
-  title: string;
-  oneLiner: string;
-  tags: string[];
-  href: string;
-};
-
-const pillars: Pillar[] = [
-  {
-    title: "Problem Solving",
-    subtitle: "Thorough Understanding of Technology.",
-    blurb: (
-      <ul className="list-disc pl-6 space-y-2">
-        <li>
-          Using statistics, algorithms, and data structures to solve problems and answer important questions
-        </li>
-        <li>Translating real-world questions into analytical and computational tasks</li>
-        <li>Writing precise, clean, readable, and high-performance code</li>
-        <li>Combining theoretical understanding with practical implementation</li>
-        <li>Iterating solutions based on available evidence and thorough testing</li>
-      </ul>
-    ),
-    bg: "bg-[#E6F2EA]",
-    href: "/",
-    points: [
-      "Statistics + algorithms",
-      "Problem decomposition",
-      "Practical implementation",
-      "Testing-driven iteration",
-    ],
-  },
-  {
-    title: "Precision",
-    subtitle: "Accuracy and clarity.",
-    blurb: (
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Ensuring data quality through validation, cleaning, and verification</li>
-        <li>Writing clear, reproducible, and well-documented code</li>
-        <li>Producing defensible, interpretable, and trustworthy results</li>
-      </ul>
-    ),
-    bg: "bg-[#EEF4E8]",
-    href: "/betterment",
-    points: ["Quality", "Clarity", "Accuracy"],
-  },
-  {
-    title: "Scientific Rigor",
-    subtitle: "Methods that hold up under scrutiny.",
-    blurb: (
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Evidence-based reasoning and empirical validation</li>
-        <li>Transparent assumptions and clear documentation</li>
-        <li>Reproducibility, sound statistics, and careful measurement</li>
-        <li>Clear communication for interpretability and accountability</li>
-      </ul>
-    ),
-    bg: "bg-[#DFF0D8]",
-    href: "/rigor",
-    points: [
-      "Reproducible workflows",
-      "Statistical discipline",
-      "Interpretability & clarity",
-      "Transparent assumptions",
-    ],
-    hasArt: true,
-  },
-];
 export default function Page() {
   return (
     <div className="min-h-screen bg-[#FAFAF7] text-[#1F2328]">
-      {/* ...your full page JSX... */}
+      <main className="mx-auto max-w-6xl px-6 py-16">
+        <h1 className="font-serif text-4xl tracking-wide">Three Pillars</h1>
+        <p className="mt-4 text-black/70">
+          Problem solving, precision, and scientific rigor.
+        </p>
+
+        <section className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+          {pillars.map((p) => (
+            <Link
+              key={p.title}
+              href={p.href}
+              className={[
+                "block rounded-2xl border border-black/10 p-8",
+                "shadow-[0_14px_30px_-18px_rgba(0,0,0,0.25)]",
+                "transition-transform hover:-translate-y-1",
+                p.bg,
+              ].join(" ")}
+            >
+              <h2 className="font-serif text-2xl text-black/90">{p.title}</h2>
+              <p className="mt-2 text-sm text-black/70">{p.subtitle}</p>
+
+              <div className="mt-5 text-sm leading-relaxed text-black/80">
+                {p.blurb}
+              </div>
+
+              <ul className="mt-6 space-y-2 text-sm text-black/75">
+                {p.points.map((pt) => (
+                  <li key={pt} className="flex items-start gap-2">
+                    <span className="mt-[6px] inline-block h-1.5 w-1.5 rounded-full bg-black/30" />
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 text-xs text-black/60 underline underline-offset-4">
+                Explore →
+              </div>
+            </Link>
+          ))}
+        </section>
+      </main>
     </div>
   );
 }
-
