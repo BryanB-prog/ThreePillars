@@ -22,38 +22,54 @@ type Project = {
 };
 
 const pillars: Pillar[] = [
-  {
-    title: "Science",
-    subtitle: "",
-    blurb:
-      "We affirm reason, evidence, and scientific inquiry as essential tools for understanding the universe and solving human problems. We reject supernatural explanations and untested claims, placing trust in human intelligence, critical thinking, and empirical knowledge. Scientific discovery and technology, guided by ethical reflection, can improve human life and expand human potential.",
-    bg: "bg-[#EEF4E8]",
-    href: "/science",
-    points: [
-      "Transparent assumptions",
-      "Statistical discipline",
-      "Reproducible workflows",
-      "Interpretability first",
-    ],
-  },
-  {
-    title: "Moral Excellence",
-    subtitle: "",
-   const blurb = (
-  <ul className="list-disc pl-6 space-y-2">
-    <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
-    <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
-    <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
-    <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
-    <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
-    <li>Supporting the moral education of children, fostering empathy, critical thinking, and compassion</li>
-    <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
-  </ul>
-);
-    bg: "bg-[#E6F2EA]",
-    href: "/ethics",
-    points: ["Human dignity over metrics", "Bias & harm analysis", "Privacy & consent", "Responsible evaluation"],
-  },
+ {
+  title: "Moral Excellence",
+  subtitle: "",
+  blurb: (
+    <ul className="list-disc pl-6 space-y-2">
+      <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
+      <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
+      <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
+      <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
+      <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
+      <li>Supporting the moral education of children, fostering empathy, critical thinking, and compassion</li>
+      <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
+    </ul>
+  ),
+  bg: "bg-[#E6F2EA]",
+  href: "/ethics",
+  points: [
+    "Human dignity over metrics",
+    "Bias & harm analysis",
+    "Privacy & consent",
+    "Responsible evaluation",
+  ],
+},
+
+ {
+  title: "Moral Excellence",
+  subtitle: "",
+  blurb: (
+    <ul className="list-disc pl-6 space-y-2">
+      <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
+      <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
+      <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
+      <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
+      <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
+      <li>Supporting the moral education of children, fostering empathy, critical thinking, and compassion</li>
+      <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
+    </ul>
+  ),
+  bg: "bg-[#E6F2EA]",
+  href: "/ethics",
+  points: [
+    "Human dignity over metrics",
+    "Bias & harm analysis",
+    "Privacy & consent",
+    "Responsible evaluation",
+  ],
+},
+
   {
     title: "Hope and Meaning",
     subtitle: "",
