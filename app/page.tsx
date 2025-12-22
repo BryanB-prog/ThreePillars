@@ -24,17 +24,17 @@ const pillars: Pillar[] = [
   {
     title: "Moral Excellence",
     subtitle: "Ethics with empathy, dignity, and accountability.",
-    blurb: (
-      <ul className="list-disc pl-6 space-y-2">
-        <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
-        <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
-        <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
-        <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
-        <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
-        <li>Supporting moral education that fosters empathy, critical thinking, and compassion</li>
-        <li>Respecting personal autonomy, privacy, and dignity—including informed life and healthcare choices</li>
-      </ul>
-    ),
+ blurb: (
+  <ul className="list-disc pl-6 space-y-2">
+    <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
+    <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
+    <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
+    <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
+    <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
+    <li>Supporting moral education that fosters empathy, critical thinking, and compassion</li>
+    <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
+  </ul>
+),
     bg: "bg-[#E6F2EA]",
     href: "/ethics",
     points: [
