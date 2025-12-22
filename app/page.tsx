@@ -1,4 +1,3 @@
-
 // app/page.tsx
 // Sentropy — Modern / Data Humanism homepage (Next.js App Router + Tailwind)
 
@@ -7,7 +6,7 @@ import Link from "next/link";
 type Pillar = {
   title: string;
   subtitle: string;
-  blurb: string;
+  blurb: React.ReactNode; // allows string OR JSX (like <ul>)
   bg: string; // Tailwind bg class
   href: string;
   points: string[];
@@ -22,62 +21,56 @@ type Project = {
 };
 
 const pillars: Pillar[] = [
- {
-  title: "Moral Excellence",
-  subtitle: "",
-  blurb: (
-    <ul className="list-disc pl-6 space-y-2">
-      <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
-      <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
-      <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
-      <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
-      <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
-      <li>Supporting the moral education of children, fostering empathy, critical thinking, and compassion</li>
-      <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
-    </ul>
-  ),
-  bg: "bg-[#E6F2EA]",
-  href: "/ethics",
-  points: [
-    "Human dignity over metrics",
-    "Bias & harm analysis",
-    "Privacy & consent",
-    "Responsible evaluation",
-  ],
-},
-
- {
-  title: "Moral Excellence",
-  subtitle: "",
-  blurb: (
-    <ul className="list-disc pl-6 space-y-2">
-      <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
-      <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
-      <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
-      <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
-      <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
-      <li>Supporting the moral education of children, fostering empathy, critical thinking, and compassion</li>
-      <li>Respecting personal autonomy, privacy, and dignity, including informed life and healthcare choices</li>
-    </ul>
-  ),
-  bg: "bg-[#E6F2EA]",
-  href: "/ethics",
-  points: [
-    "Human dignity over metrics",
-    "Bias & harm analysis",
-    "Privacy & consent",
-    "Responsible evaluation",
-  ],
-},
-
   {
-    title: "Hope and Meaning",
-    subtitle: "",
+    title: "Moral Excellence",
+    subtitle: "Ethics with empathy, dignity, and accountability.",
+    blurb: (
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Cultivating ethical character grounded in reason, compassion, and responsibility</li>
+        <li>Upholding justice, fairness, and human rights through democratic and pluralistic principles</li>
+        <li>Rejecting discrimination and intolerance while affirming the equal dignity of all people</li>
+        <li>Valuing honesty, integrity, altruism, and accountability as shared moral foundations</li>
+        <li>Encouraging moral reflection guided by evidence, consequences, and rational inquiry</li>
+        <li>Supporting moral education that fosters empathy, critical thinking, and compassion</li>
+        <li>Respecting personal autonomy, privacy, and dignity—including informed life and healthcare choices</li>
+      </ul>
+    ),
+    bg: "bg-[#E6F2EA]",
+    href: "/ethics",
+    points: [
+      "Human dignity over metrics",
+      "Bias & harm analysis",
+      "Privacy & consent",
+      "Responsible evaluation",
+    ],
+  },
+  {
+    title: "Human Betterment",
+    subtitle: "Using knowledge to reduce suffering and expand opportunity.",
     blurb:
-      "We affirm joy, creativity, and the pursuit of meaning in this life. We value the arts alongside the sciences, embrace curiosity about the universe, and face the future with optimism and hope. We choose learning over dogma, truth over ignorance, compassion over fear, beauty over ugliness, and reason over blind faith or irrationality. We believe in striving toward the fullest realization of our human potential.",
+      "We aim to improve real lives—measurably and respectfully. That includes reducing preventable suffering, protecting the vulnerable, and building conditions where people can flourish. We are committed to the reduction and eventual elimination of poverty, extreme deprivation, and gross income inequality, and to expanding fair access to education, healthcare, and meaningful opportunity—while caring for the world we share.",
+    bg: "bg-[#EEF4E8]",
+    href: "/betterment",
+    points: [
+      "End poverty & deprivation",
+      "Reduce extreme inequality",
+      "Access to education & care",
+      "Stewardship for future generations",
+    ],
+  },
+  {
+    title: "Technical & Scientific Rigor",
+    subtitle: "Truth-seeking methods that hold up under scrutiny.",
+    blurb:
+      "We commit to evidence-based reasoning, transparent assumptions, and methods that can be tested and repeated. We are skeptical of untested claims and willing to revise beliefs when better evidence appears. In practice, this means reproducibility, sound statistics, careful measurement, and clear communication—so work remains trustworthy, interpretable, and accountable.",
     bg: "bg-[#DFF0D8]",
-    href: "/meaning",
-    points: ["Well-being & community", "Social impact narratives", "Design for trust", "Compassionate systems"],
+    href: "/rigor",
+    points: [
+      "Reproducible workflows",
+      "Statistical discipline",
+      "Interpretability & clarity",
+      "Transparent assumptions",
+    ],
     hasArt: true,
   },
 ];
@@ -85,24 +78,21 @@ const pillars: Pillar[] = [
 const featuredProjects: Project[] = [
   {
     title: "Housing vs. Income: A Humanist View",
-    oneLiner:
-      "A story-first analysis of affordability, inequity, and what the numbers hide.",
-    tags: ["Science", "Visualization", "Social Good"],
+    oneLiner: "A story-first analysis of affordability, inequity, and what the numbers hide.",
+    tags: ["Human Betterment", "Visualization", "Social Good"],
     href: "/work/housing-income",
   },
   {
     title: "Ethical Visualization Checklist",
-    oneLiner:
-      "A practical framework to reduce distortion, harm, and manipulation in charts.",
+    oneLiner: "A practical framework to reduce distortion, harm, and manipulation in charts.",
     tags: ["Moral Excellence", "Design", "Communication"],
     href: "/work/ethical-viz",
   },
   {
-    title: "Meaningful Metrics",
-    oneLiner:
-      "A critique of KPI obsession and a proposal for humane measurement.",
-    tags: ["Hope & Meaning", "Essays", "Systems"],
-    href: "/writing/meaningful-metrics",
+    title: "Reproducible Analysis Template",
+    oneLiner: "A lightweight workflow for repeatable results, versioning, and clear reporting.",
+    tags: ["Technical Rigor", "Science", "Workflow"],
+    href: "/work/reproducible-template",
   },
 ];
 
@@ -120,9 +110,9 @@ const recentWriting = [
     date: "2025",
   },
   {
-    title: "Designing for Dignity",
-    desc: "Small UI choices that protect people from harm.",
-    href: "/writing/designing-for-dignity",
+    title: "Reproducibility as Respect",
+    desc: "Why rigor is ethical—and how to practice it without arrogance.",
+    href: "/writing/reproducibility-as-respect",
     date: "2025",
   },
 ];
@@ -155,9 +145,7 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
 
       <div className="relative flex h-full flex-col p-8">
         <div className="flex items-start justify-between gap-4">
-          <h2 className="font-serif text-3xl tracking-wide text-black/90">
-            {p.title}
-          </h2>
+          <h2 className="font-serif text-3xl tracking-wide text-black/90">{p.title}</h2>
           <span className="rounded-full border border-black/10 bg-white/50 px-3 py-1 text-xs text-black/70">
             Pillar {index + 1}
           </span>
@@ -165,9 +153,10 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
 
         <p className="mt-2 text-sm text-black/70">{p.subtitle}</p>
 
-        <p className="mt-6 max-w-[32ch] text-base leading-relaxed text-black/80">
+        {/* NOTE: use div instead of p so lists render correctly */}
+        <div className="mt-6 max-w-[32ch] text-base leading-relaxed text-black/80">
           {p.blurb}
-        </p>
+        </div>
 
         <ul className="mt-8 space-y-2 text-sm text-black/75">
           {p.points.map((pt) => (
@@ -181,7 +170,6 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
         <div className="mt-auto pt-8">
           {p.hasArt ? (
             <div className="relative mt-2 overflow-hidden rounded-xl border border-black/10 bg-white/45 p-4">
-              {/* inline placeholder illustration (no external files needed) */}
               <svg
                 viewBox="0 0 640 220"
                 className="h-28 w-full opacity-80"
@@ -229,10 +217,8 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
               </svg>
 
               <div className="mt-2 flex items-center justify-between text-xs text-black/60">
-                <span>Hope is a direction.</span>
-                <span className="underline underline-offset-2 opacity-70">
-                  Explore →
-                </span>
+                <span>Rigor is a form of care.</span>
+                <span className="underline underline-offset-2 opacity-70">Explore →</span>
               </div>
             </div>
           ) : (
@@ -254,9 +240,7 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="group inline-flex items-baseline gap-2">
             <span className="font-serif text-xl tracking-wide">Three Pillars</span>
-            <span className="text-xs text-black/50 group-hover:text-black/70">
-              data humanism
-            </span>
+            <span className="text-xs text-black/50 group-hover:text-black/70">data humanism</span>
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm md:flex">
@@ -349,9 +333,7 @@ export default function HomePage() {
                 className="group rounded-2xl border border-black/10 bg-white/60 p-6 shadow-[0_14px_30px_-18px_rgba(0,0,0,0.25)] hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
               >
                 <h3 className="font-serif text-xl tracking-wide">{proj.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-black/70">
-                  {proj.oneLiner}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-black/70">{proj.oneLiner}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {proj.tags.map((t) => (
                     <Tag key={t}>{t}</Tag>
@@ -417,13 +399,10 @@ export default function HomePage() {
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:items-center">
             <div className="md:col-span-7">
-              <h2 className="font-serif text-3xl tracking-wide">
-                Build kinder systems.
-              </h2>
+              <h2 className="font-serif text-3xl tracking-wide">Build kinder systems.</h2>
               <p className="mt-4 text-base leading-relaxed text-black/70">
-                Sentropy is a personal framework for choosing what to build, how to
-                evaluate it, and who it should serve. If you’d like to collaborate,
-                talk research, or share a project idea, reach out.
+                Sentropy is a personal framework for choosing what to build, how to evaluate it, and who it should serve.
+                If you’d like to collaborate, talk research, or share a project idea, reach out.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
@@ -460,9 +439,7 @@ export default function HomePage() {
 
       <footer className="border-t border-black/10 bg-[#FAFAF7]">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm text-black/60">
-            © {new Date().getFullYear()} Sentropy
-          </p>
+          <p className="text-sm text-black/60">© {new Date().getFullYear()} Sentropy</p>
           <div className="flex flex-wrap gap-6 text-sm">
             <Link className="text-black/70 hover:text-black" href="/work">
               Work
