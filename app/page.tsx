@@ -35,13 +35,12 @@ const pillars: Pillar[] = [
   </ul>
 ),
     bg: "bg-[#E6F2EA]",
-    href: "/ethics",
+    href: "/",
     points: [
-      "Accurate Data Analysis",
-      "Precision",
-      "Clean, Efficent Code",
-      "Responsible Use of Information",
-    ],
+  "Quality",
+  isNew ? "New feature" : undefined,
+  "Accuracy",
+].filter((p): p is string => Boolean(p)),
   },
   {
     title: "Precision",
