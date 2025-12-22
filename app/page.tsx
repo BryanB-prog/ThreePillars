@@ -81,3 +81,11 @@ const pillars: Pillar[] = [
     hasArt: true,
   },
 ];
+export default function Page() {
+  return (
+    <div className="min-h-screen bg-[#FAFAF7] text-[#1F2328]">
+      {/* ...your full page JSX... */}
+    </div>
+  );
+}
+
