@@ -38,7 +38,7 @@ const pillars: Pillar[] = [
       </ul>
       
     ),
-    bg: "bg-[url('/pillar1.png')] bg-cover bg-center bg-no-repeat bg-opacity-60"
+    bg: "bg-[url('/pillar1.png')] bg-cover bg-center bg-no-repeat bg-opacity-50"
     href: "/",
     points: ["R (tidyverse, ggplot2)", "Python (pandas, NumPy, SciPy)"],
   },
