@@ -208,8 +208,7 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
               </svg>
 
               <div className="mt-2 flex items-center justify-between text-xs text-black/60">
-                <span>Rigor is a form of care.</span>
-                <span className="underline underline-offset-2 opacity-70">Explore →</span>
+               <span className="underline underline-offset-2 opacity-70">Explore →</span>
               </div>
             </div>
           ) : (
