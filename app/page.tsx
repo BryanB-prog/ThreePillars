@@ -137,10 +137,9 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
       href={p.href}
       className={[
         "group relative block min-h-[720px] overflow-visible rounded-2xl border border-black/10",
- "shadow-[14px_10px_36px_-10px_rgba(34,197,94,0.32)]",
-"hover:shadow-[18px_14px_48px_-12px_rgba(34,197,94,0.42)]",
-
-  "focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600/30",
+  "shadow-[14px_10px_36px_-10px_rgba(34,197,94,0.32)]",
+  "hover:shadow-[18px_14px_48px_-12px_rgba(34,197,94,0.42)] hover:-translate-y-1",
+  "transition-all duration-300",
         p.bg,
       ].join(" ")}
       aria-label={`Open ${p.title}`}
