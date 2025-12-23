@@ -137,7 +137,7 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
       href={p.href}
       className={[
         "group relative block min-h-[720px] overflow-visible rounded-2xl border border-black/10",
-  "shadow-[12px_8px_28px_-10px_rgba(34,197,94,0.25)] transition-transform",
+  "shadow-[12px_8px_28px_-10px_rgba(20, 118, 34, 0.8))] transition-transform",
   "hover:shadow-[16px_10px_36px_-12px_rgba(34,197,94,0.35)] hover:-translate-y-1",
   "focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600/30",
         p.bg,
