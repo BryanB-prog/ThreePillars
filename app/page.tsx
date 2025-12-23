@@ -41,9 +41,6 @@ const pillars: Pillar[] = [
     href: "/",
     points: ["R (tidyverse, ggplot2)", "Python (pandas, NumPy, SciPy)"],
   },
-  // ...
-];
-
   {
     title: "Development",
     subtitle: "Models and Algorithms",
@@ -52,15 +49,15 @@ const pillars: Pillar[] = [
         <li>Supervised learning (classification & regression)</li>
         <li>Unsupervised learning (clustering, dimensionality reduction)</li>
         <li>Tree-based methods (Random Forests, Gradient Boosting)</li>
-      <li>Model selection and cross-validation</li>
-      <li>Optimization methods and loss functions </li>
-      <li>Deep Learning</li>
+        <li>Model selection and cross-validation</li>
+        <li>Optimization methods and loss functions</li>
+        <li>Deep Learning</li>
         <li>Algorithmic thinking and complexity analysis</li>
         <li>Data structures (trees, graphs, hashing)</li>
-               </ul>
+      </ul>
     ),
     bg: "bg-[#EEF4E8]",
-    href: "",
+    href: "/",
     points: ["scikit-learn", "TensorFlow / PyTorch (foundations)", "Custom algorithm implementation"],
   },
   {
@@ -71,14 +68,14 @@ const pillars: Pillar[] = [
         <li>SQL and relational database design</li>
         <li>Data pipelines and reproducible workflows</li>
         <li>Version control (Git/GitHub)</li>
-        <li>Data visualization and storytellingy</li>
+        <li>Data visualization and storytelling</li>
         <li>Ethical and responsible data practices</li>
-        <li>Clarity:Framing technical results for non-technical audiences</li>
+        <li>Clarity: framing results for non-technical audiences</li>
         <li>Deployment awareness (APIs, cloud basics, static sites)</li>
       </ul>
     ),
     bg: "bg-[#DFF0D8]",
-    href: "",
+    href: "/",
     points: ["SQL (PostgreSQL / MySQL concepts)", "Git & GitHub", "Jupyter / RStudio", "Web-based visualization & dashboards"],
     hasArt: true,
   },
