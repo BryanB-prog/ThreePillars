@@ -40,36 +40,44 @@ const pillars: Pillar[] = [
     ),
     bg: "bg-[#E6F2EA]",
     href: "/",
-    points: ["Statistics + algorithms", "Problem decomposition", "Practical implementation", "Testing-driven iteration"],
+    points: ["R (tidyverse, ggplot2)", "Python (pandas, NumPy, SciPy)"],
   },
   {
-    title: "Precision",
-    subtitle: "Accuracy and clarity.",
+    title: "Development",
+    subtitle: "Models and Algorithms",
     blurb: (
       <ul className="list-disc pl-6 space-y-2">
-        <li>Ensuring data quality through validation, cleaning, and verification</li>
-        <li>Writing clear, reproducible, and well-documented code</li>
-        <li>Producing defensible, interpretable, and trustworthy results</li>
-      </ul>
+        <li>Supervised learning (classification & regression)</li>
+        <li>Unsupervised learning (clustering, dimensionality reduction)</li>
+        <li>Tree-based methods (Random Forests, Gradient Boosting)</li>
+      <li>Model selection and cross-validation</li>
+      <li>Optimization methods and loss functions </li>
+      <li>Deep Learning</li>
+        <li>Algorithmic thinking and complexity analysis</li>
+        <li>Data structures (trees, graphs, hashing)</li>
+               </ul>
     ),
     bg: "bg-[#EEF4E8]",
     href: "/betterment",
-    points: ["Quality", "Clarity", "Accuracy"],
+    points: ["scikit-learn", "TensorFlow / PyTorch (foundations)", "Custom algorithm implementation"],
   },
   {
-    title: "Scientific Rigor",
+    title: "Integration",
     subtitle: "Methods that hold up under scrutiny.",
     blurb: (
       <ul className="list-disc pl-6 space-y-2">
-        <li>Evidence-based reasoning and empirical validation</li>
-        <li>Transparent assumptions and clear documentation</li>
-        <li>Reproducibility, sound statistics, and careful measurement</li>
-        <li>Clear communication for interpretability and accountability</li>
+        <li>SQL and relational database design</li>
+        <li>Data pipelines and reproducible workflows</li>
+        <li>Version control (Git/GitHub)</li>
+        <li>Data visualization and storytellingy</li>
+        <li>Ethical and responsible data practices</li>
+        <li>Clarity:Framing technical results for non-technical audiences</li>
+        <li>Deployment awareness (APIs, cloud basics, static sites)</li>
       </ul>
     ),
     bg: "bg-[#DFF0D8]",
     href: "/rigor",
-    points: ["Reproducible workflows", "Statistical discipline", "Interpretability & clarity", "Transparent assumptions"],
+    points: ["SQL (PostgreSQL / MySQL concepts)", "Git & GitHub", "Jupyter / RStudio", "Web-based visualization & dashboards"],
     hasArt: true,
   },
 ];
