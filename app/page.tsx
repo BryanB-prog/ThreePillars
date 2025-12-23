@@ -58,7 +58,7 @@ const pillars: Pillar[] = [
                </ul>
     ),
     bg: "bg-[#EEF4E8]",
-    href: "/betterment",
+    href: "/",
     points: ["scikit-learn", "TensorFlow / PyTorch (foundations)", "Custom algorithm implementation"],
   },
   {
@@ -76,7 +76,7 @@ const pillars: Pillar[] = [
       </ul>
     ),
     bg: "bg-[#DFF0D8]",
-    href: "/rigor",
+    href: "/",
     points: ["SQL (PostgreSQL / MySQL concepts)", "Git & GitHub", "Jupyter / RStudio", "Web-based visualization & dashboards"],
     hasArt: true,
   },
