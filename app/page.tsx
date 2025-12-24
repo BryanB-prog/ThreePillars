@@ -230,7 +230,17 @@ export default function Page() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="group inline-flex items-baseline gap-2">
             <span className="font-serif text-xl tracking-wide">Three Pillars</span>
-            <span className="text-xs text-black/50 group-hover:text-black/70">data humanism</span>
+           <Link href="/" className="group inline-flex items-center gap-2">
+  <span className="font-serif text-xl tracking-wide">Three Pillars</span>
+
+  <Image
+    src="/data-humanism-mark.png"
+    alt="Data Humanism"
+    width={18}
+    height={18}
+    className="opacity-60 group-hover:opacity-90 transition-opacity"
+  />
+</Link>
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm md:flex">
