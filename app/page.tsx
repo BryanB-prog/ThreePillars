@@ -8,7 +8,7 @@ export default function Page() {
 
             <Image
               src="/pillarsthumbnail.png"
-              alt="Data Humanism"
+              alt=""
               width={18}
               height={18}
               className="opacity-60 group-hover:opacity-90 transition-opacity"
