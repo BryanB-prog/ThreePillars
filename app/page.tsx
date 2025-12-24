@@ -228,8 +228,8 @@ export default function Page() {
             <Image
               src="/pillarsthumbnail.png"
               alt=""
-              width={44}
-              height={44}
+              width={88}
+              height={88}
               className="opacity-60 transition-opacity group-hover:opacity-90"
               priority
             />
