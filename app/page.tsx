@@ -256,8 +256,11 @@ export default function Page() {
       </Link>
     </nav>
 
-    <Link href="/work"className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm text-black/80 hover:bg-white"
-    > View work
+    <Link
+      href="/work"
+      className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm text-black/80 hover:bg-white"
+    >
+      View work
     </Link>
   </div>
 </header>
