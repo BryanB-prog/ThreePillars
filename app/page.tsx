@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 type Pillar = {
   title: string;
@@ -227,24 +228,39 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#FAFAF7] text-[#1F2328]">
       <header className="sticky top-0 z-50 border-b border-black/10 bg-[#FAFAF7]/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          
-          <Link href="/" className="group inline-flex items-center gap-2">
-            <span className="font-serif text-xl tracking-wide">
-              Three Pillars
-            </span>
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <Link href="/" className="group inline-flex items-center gap-2">
+      <span className="font-serif text-xl tracking-wide">Three Pillars</span>
 
-            <Image
-              src="public/pillars-thumbnail.png"
-              alt="Data Humanism"
-              width={18}
-              height={18}
-              className="opacity-60 group-hover:opacity-90 transition-opacity"
-            />
-          </Link>
+      <Image
+        src="/pillars-thumbnail.png"
+        alt="Data Humanism"
+        width={18}
+        height={18}
+        className="opacity-60 group-hover:opacity-90 transition-opacity"
+      />
+    </Link>
 
-        </div>
-      </header>
+    <nav className="hidden items-center gap-6 text-sm md:flex">
+      <Link className="text-black/70 hover:text-black" href="/work">
+        Work
+      </Link>
+      <Link className="text-black/70 hover:text-black" href="/writing">
+        Writing
+      </Link>
+      <Link className="text-black/70 hover:text-black" href="/about">
+        About
+      </Link>
+      <Link className="text-black/70 hover:text-black" href="/contact">
+        Contact
+      </Link>
+    </nav>
+
+    <Link href="/work"className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm text-black/80 hover:bg-white"
+    > View work
+    </Link>
+  </div>
+</header>
     </div>
   );
           <nav className="hidden items-center gap-6 text-sm md:flex">
