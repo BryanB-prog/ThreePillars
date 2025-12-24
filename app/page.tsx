@@ -234,7 +234,7 @@ export default function Page() {
   <span className="font-serif text-xl tracking-wide">Three Pillars</span>
 
   <Image
-    src="/data-humanism-mark.png"
+    src="/pillarsthumbnail/png"
     alt="Data Humanism"
     width={18}
     height={18}
