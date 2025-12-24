@@ -227,13 +227,13 @@ function PillarCard({ p, index }: { p: Pillar; index: number }) {
 export default function Page() {
   return (
     <div className="min-h-screen bg-[#FAFAF7] text-[#1F2328]">
-      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#FAFAF7]/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-[#FAFAF7]/80 backdrop-blur">
   <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
     <Link href="/" className="group inline-flex items-center gap-2">
       <span className="font-serif text-xl tracking-wide">Three Pillars</span>
 
       <Image
-        src="/pillarsthumbnail.png"
+        src="/pillars-thumbnail.png"
         alt="Data Humanism"
         width={18}
         height={18}
