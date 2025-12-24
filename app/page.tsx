@@ -235,7 +235,7 @@ export default function Page() {
             </span>
 
             <Image
-              src="/pillars-thumbnail.png"
+              src="public/pillars-thumbnail.png"
               alt="Data Humanism"
               width={18}
               height={18}
