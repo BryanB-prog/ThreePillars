@@ -6,7 +6,7 @@ import { Card } from "@/components/Card";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="max-h-screen  flex flex-col items-center justify-center p-4">
+    <div className="max-h-screen  flex flex-col items-center justify-start p-4">
       <section className="p-6 rounded-lg shadow-lg">
        
         <p className="text-gray-500">
@@ -137,3 +137,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
