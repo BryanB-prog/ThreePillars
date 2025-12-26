@@ -22,10 +22,10 @@ const HomePage: React.FC = () => {
         <h1 className="text-4xl font-bold text-gray-800">Three Pillars</h1>
         
                <Image 
-      src="/columns4.png" 
+      src="/logo1.png" 
       alt="Logo" 
-      width={100} 
-      height={100} 
+      width={200} 
+      height={200} 
     />     
 
     {/* Right: Menu */}
