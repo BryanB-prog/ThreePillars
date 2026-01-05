@@ -10,7 +10,9 @@ const HomePage: React.FC = () => {
       <section className="p-6 rounded-lg shadow-lg">
        
         <p className="text-gray-500">
-         Hi, my name is Bryan. I'm a veteran IT professional and recent Data Science grad (Master of Science in Data Science) and this is my website.
+         Hi, I’m Bryan. I’m a data scientist with an experienced background in IT. I use science to help understand complex, human-centered problems.
+          This site reflects how I use data, the scientific method, and humanistic values to help make the world a better place.
+
         </p>
       </section>
       <div className="mb-2">
@@ -137,4 +139,5 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
