@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
        
         <p className="text-gray-500">
          Hi, I’m Bryan. I’m a data scientist with an experienced background in IT. I use science to help understand complex, human-centered problems.
-         <p></p> This site reflects how I use data, the scientific method, and humanistic values to help make the world a better place.
+         <p></p> This site reflects how I use data, the scientific method, and humanist values to help make the world a better place.
 
         </p>
       </section>
@@ -139,6 +139,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
