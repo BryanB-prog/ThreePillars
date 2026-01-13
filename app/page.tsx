@@ -87,15 +87,19 @@ const HomePage: React.FC = () => {
   </Card>
 
   <Card title="Integration">
-    <ul className="list-disc pl-5 space-y-1">
-      <li>SQL and relational database design</li>
-      <li>Data pipelines and reproducible workflows</li>
-      <li>Version control (Git/GitHub)</li>
-      <li>Ethical and responsible data practices</li>
-      <li>Interpretability and explainability</li>
-      <li>Translating technical results for non-technical audiences</li>
-        <li>Deployment awareness (APIs, cloud basics, static sites)</li>
-    </ul>
+   <h3 className="text-lg font-semibold mb-2">Integration</h3>
+  <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+    <li><strong>SQL & relational database design</strong> – Schema design, joins, indexing, and query optimization</li>
+    <li><strong>Data pipelines & reproducible workflows</strong> – ETL processes, automation, and repeatable analysis pipelines</li>
+    <li><strong>Version control & collaboration</strong> – Git workflows, GitHub collaboration, and code review practices</li>
+    <li><strong>Data visualization & storytelling</strong> – Clear visual communication and narrative-driven insights</li>
+    <li><strong>Ethical & responsible data practices</strong> – Bias awareness, fairness, privacy, and data governance</li>
+    <li><strong>Interpretability & explainability</strong> – Model transparency, explainable outputs, and trust-building</li>
+    <li><strong>Translating technical results</strong> – Communicating insights to non-technical and stakeholder audiences</li>
+    <li><strong>Deployment awareness</strong> – APIs, cloud fundamentals, and static site deployments</li>
+    <li><strong>Documentation & knowledge sharing</strong> – Clear documentation, READMEs, and reproducible reporting</li>
+    <li><strong>End-to-end system integration</strong> – Connecting data, models, and insights into usable systems</li>
+  </ul>
   </Card>
 </div>
 
@@ -144,6 +148,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
