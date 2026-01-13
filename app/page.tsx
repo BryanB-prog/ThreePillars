@@ -32,18 +32,20 @@ const HomePage: React.FC = () => {
 
     {/* Right: Menu */}
       <nav className="flex items-center gap-6 text-gray-700">
-        <a href="#projects" className="hover:text-gray-900">
-          Projects
-        </a>
-        <a>
-         href="/skills"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-blue-600 hover:underline"
+  <a href="skilltree" className="hover:text-gray-900">
+    Projects
+  </a>
 
-  View Skill & Knowledge Tree
-        </a>
-       
+  <a
+    href="/skills"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline"
+  >
+    View Skill & Knowledge Tree
+  </a>
+</nav>
+
 
 
         <a href="#about" className="hover:text-gray-900">
@@ -156,6 +158,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
