@@ -5,7 +5,7 @@ import { Card } from "@/components/Card";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="max-h-screen flex flex-col items-center justify-start p-8">
+    <div className="max-h-screen flex flex-col items-center justify-start p-12">
       <section className="p-6 rounded-lg shadow-lg max-w-3xl w-full">
         <p className="text-gray-500">
           Hi, I’m Bryan. I’m a data scientist with an experienced background in
@@ -232,4 +232,5 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
