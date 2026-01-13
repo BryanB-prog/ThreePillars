@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
           </a>
 
           <a
-            href="skilltree"
+            href="/skilltree"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -232,6 +232,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
