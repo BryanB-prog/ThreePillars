@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
         </p>
       </section>
       <div className="mb-2">
-  ...
+  
 </div>
 
       
@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
         </a>
       </nav>
 
-      </header>
+  
       
       
       {
@@ -158,6 +158,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
