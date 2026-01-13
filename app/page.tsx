@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
         <a href="#projects" className="hover:text-gray-900">
           Projects
         </a>
-        <a href="/skilltree.tsx" className="hover:text-gray-900">
+        <a href="/skilltree" className="hover:text-gray-900">
           Skill Tree
         </a>
         <a href="#about" className="hover:text-gray-900">
@@ -148,6 +148,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
