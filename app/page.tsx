@@ -51,20 +51,22 @@ const HomePage: React.FC = () => {
       <section> 
 <div className="grid gap-6 md:grid-cols-3">
   <Card title="Precision">              
-    <ul className="list-disc pl-5 space-y-1">
-      
-   <li>Probability theory and statistical inference
-</li> 
-<li>Linear & logistic regression</li>
-<li>Hypothesis testing and confidence intervals</li>
-<li>Bias Variance tradeoff and model evaluation</li>
-<li>Experimental design and causal reasoning</li>
-<li>Data cleaning, preprocessing, and feature engineering</li>
-<li>Exploratory Data Analysis (EDA)</li>
-<li>Handling missing data and outliers</li>
+<section>
+  <h3 class="text-lg font-semibold mb-2">Precision</h3>
+  <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
+    <li><strong>Probability theory & statistical foundations</strong> – Random variables, distributions, sampling, and uncertainty</li>
+    <li><strong>Statistical inference</strong> – Estimation, hypothesis testing, confidence intervals, and power analysis</li>
+    <li><strong>Regression & classification models</strong> – Linear and logistic regression, assumptions, and interpretability</li>
+    <li><strong>Model evaluation & validation</strong> – Bias–variance tradeoff, cross-validation, and performance metrics</li>
+    <li><strong>Experimental design & causal reasoning</strong> – A/B testing, confounding, and observational vs. experimental analysis</li>
+    <li><strong>Data cleaning & preprocessing</strong> – Data quality assessment, transformations, and reproducible pipelines</li>
+    <li><strong>Feature engineering</strong> – Scaling, encoding, interactions, and domain-informed feature creation</li>
+    <li><strong>Exploratory Data Analysis (EDA)</strong> – Statistical summaries, visualization, and pattern discovery</li>
+    <li><strong>Missing data & outlier handling</strong> – Robust methods, imputation strategies, and sensitivity analysis</li>
+    <li><strong>Uncertainty & result reliability</strong> – Error analysis, reproducibility, and practical vs. statistical significance</li>
+  </ul>
+</section>
 
-
-    </ul>
         
   </Card>
 
@@ -139,6 +141,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
