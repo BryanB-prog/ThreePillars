@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
       <section> 
 <div className="grid gap-6 md:grid-cols-3">
   <Card title="Precision">              
-<section>
+
   <h3 class="text-lg font-semibold mb-2">Precision</h3>
   <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
     <li><strong>Probability theory & statistical foundations</strong> – Random variables, distributions, sampling, and uncertainty</li>
@@ -65,8 +65,6 @@ const HomePage: React.FC = () => {
     <li><strong>Missing data & outlier handling</strong> – Robust methods, imputation strategies, and sensitivity analysis</li>
     <li><strong>Uncertainty & result reliability</strong> – Error analysis, reproducibility, and practical vs. statistical significance</li>
   </ul>
-</section>
-
         
   </Card>
 
@@ -141,6 +139,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
