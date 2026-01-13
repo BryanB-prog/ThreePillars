@@ -44,14 +44,14 @@ const HomePage: React.FC = () => {
   >
     View Skill & Knowledge Tree
   </a>
-</nav>
+
 
 
 
         <a href="#about" className="hover:text-gray-900">
           About
         </a>
-      </nav>
+    
 
     </div>
     </header>
@@ -159,6 +159,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
