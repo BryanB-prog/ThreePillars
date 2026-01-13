@@ -68,16 +68,22 @@ const HomePage: React.FC = () => {
       </Card>
 
   <Card title="Development">
-    <ul className="list-disc pl-5 space-y-1">
-      <li>Supervised learning (classification & regression)</li>
-      <li>Unsupervised learning (clustering, dimensionality reduction)</li>
-      <li>Tree-based methods (Random Forests, Gradient Boosting)</li>
-      <li>Model selection and cross-validation</li>
-      <li>Optimization methods and loss functions</li>
-      <li>Deep Learning</li>
-      <li>Algorithmic thinking and complexity analysis</li>
-      <li>Data structures (trees, graphs, hashing)</li>
-    </ul>
+ 
+  <h3 className="text-lg font-semibold mb-2">Development</h3>
+  <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+    <li><strong>Supervised learning</strong> – Classification and regression models, training workflows, and evaluation</li>
+    <li><strong>Unsupervised learning</strong> – Clustering, dimensionality reduction, and structure discovery</li>
+    <li><strong>Tree-based methods</strong> – Decision trees, Random Forests, and Gradient Boosting</li>
+    <li><strong>Model selection & tuning</strong> – Cross-validation, hyperparameter tuning, and comparative evaluation</li>
+    <li><strong>Optimization & loss functions</strong> – Objective functions, gradient-based optimization, and convergence</li>
+    <li><strong>Deep learning fundamentals</strong> – Neural networks, representation learning, and training dynamics</li>
+    <li><strong>Algorithmic thinking</strong> – Problem decomposition, abstraction, and solution design</li>
+    <li><strong>Computational complexity</strong> – Time and space complexity analysis and scalability considerations</li>
+    <li><strong>Data structures</strong> – Trees, graphs, hashing, and efficient data organization</li>
+    <li><strong>End-to-end model development</strong> – From problem framing to deployable, maintainable solutions</li>
+  </ul>
+
+
   </Card>
 
   <Card title="Integration">
@@ -138,6 +144,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
