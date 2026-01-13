@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
         </a>
     
 
-    </div>
+   
     </header>
       
       
@@ -159,6 +159,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
