@@ -193,7 +193,7 @@ const HomePage: React.FC = () => {
         <div className="grid gap-6 md:grid-cols-3 mt-6">
           <div className="flex items-center justify-center">
             <Image
-              src="/precision1.png"
+              src="/output.png"
               alt="Precision illustration"
               width={200}
               height={250}
@@ -232,6 +232,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
