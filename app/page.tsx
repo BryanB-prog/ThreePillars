@@ -199,8 +199,6 @@ const HomePage: React.FC = () => {
       </section>
 
 
-     // app/page.tsx (inside your main component)
-
 <section id="featured" className="mt-16">
   <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
     <div className="grid gap-8 md:grid-cols-2 md:items-center">
@@ -267,6 +265,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
