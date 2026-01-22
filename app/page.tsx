@@ -26,35 +26,30 @@ const HomePage: React.FC = () => {
         <Image src="/logo1.png" alt="Logo" width={200} height={200} />
 
         {/* Right: Menu */}
-        <nav className="flex items-center gap-6 text-gray-700">
-           <nav className="flex items-center gap-6 text-sm font-medium">
-       <nav className="flex items-center gap-6 text-sm font-medium">
-      <a
-        href="/project/page"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-zinc-900"
-      >
-        Projects
-      </a>
-        Projects
-      </a>
+       <nav className="flex items-center gap-6 text-sm font-medium text-gray-700">
+  <a
+    href="/projects"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-gray-900"
+  >
     Projects
   </a>
 
-          <a
-            href="/skilltree/page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            View Skill &amp; Knowledge Tree
-          </a>
+  <a
+    href="/skilltree"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline"
+  >
+    View Skill &amp; Knowledge Tree
+  </a>
 
-          <a href="#about" className="hover:text-gray-900">
-            About
-          </a>
-        </nav>
+  <a href="#about" className="hover:text-gray-900">
+    About
+  </a>
+</nav>
+
       </header>
 
       {/* Projects / Pillars */}
@@ -243,6 +238,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
