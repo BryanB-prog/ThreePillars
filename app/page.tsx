@@ -195,39 +195,34 @@ const HomePage: React.FC = () => {
           </Card>
         </div>
 
-        {/* Images row */}
-        <div className="grid gap-6 md:grid-cols-3 mt-6">
-          <div className="flex items-center justify-center">
-            <Image
-              src="/output.png"
-              alt="Precision illustration"
-              width={200}
-              height={250}
-              className="rounded-md opacity-100"
-            />
-          </div>
-
-          <div className="flex items-center justify-center">
-            <Image
-              src="/development1.png"
-              alt="Development illustration"
-              width={200}
-              height={250}
-              className="rounded-md opacity-90"
-            />
-          </div>
-
-          <div className="flex items-center justify-center">
-            <Image
-              src="/integration2.png"
-              alt="Integration illustration"
-              width={200}
-              height={250}
-              className="rounded-md opacity-90"
-            />
-          </div>
-        </div>
+       
       </section>
+
+
+      <nav className="flex items-center gap-6 text-sm font-medium text-gray-700">
+  <a
+    href="/projects"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-gray-900"
+  >
+    Projects
+  </a>
+
+  <a
+    href="/skilltree"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline"
+  >
+    View Skill &amp; Knowledge Tree
+  </a>
+
+  <a href="#about" className="hover:text-gray-900">
+    About
+  </a>
+</nav>
+
 
       {/* About section placeholder */}
       <section id="about" className="mt-10 max-w-3xl w-full">
@@ -238,6 +233,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
