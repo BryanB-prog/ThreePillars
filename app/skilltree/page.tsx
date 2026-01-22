@@ -1,6 +1,14 @@
 // app/skilltree/page.tsx
 
-export default function skiltree() {
+type PillarColor = "blue" | "green" | "purple"
+
+type PillarProps = {
+  title: string
+  color: PillarColor
+  skills: string[]
+}
+
+export default function SkillTreePage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-semibold mb-3 text-center">
@@ -37,35 +45,32 @@ export default function skiltree() {
           ]}
         />
 
-     function Pillar({ title, color, skills }: PillarProps) {
-  return (
-    <section className="relative flex flex-col items-center">
-      <PillarHead title={title} color={color} />
-
-      {/* vertical connector */}
-      <div className="w-px h-10 bg-gray-300" />
-
-      <div className="flex flex-wrap justify-center gap-6 relative">
-        {skills.map((skill) => (
-          <SkillNode key={skill} label={skill} color={color} />
-        ))}
+        <Pillar
+          title="Integration"
+          color="purple"
+          skills={[
+            "SQL & Relational Design",
+            "Data Pipelines",
+            "Version Control (Git)",
+            "Interpretability",
+            "Responsible Data Practices",
+            "Communicating Results",
+          ]}
+        />
       </div>
-    </section>
+    </main>
   )
-}
-
-type PillarProps = {
-  title: string
-  color: "blue" | "green" | "purple"
-  skills: string[]
 }
 
 function Pillar({ title, color, skills }: PillarProps) {
   return (
-    <section className="flex flex-col items-center gap-8">
+    <section className="relative flex flex-col items-center">
       <PillarHead title={title} color={color} />
 
-      <div className="flex flex-wrap justify-center gap-6">
+      {/* trunk line from pillar head down toward the nodes */}
+      <div className={`w-px h-10 ${lineColor(color)}`} />
+
+      <div className="flex flex-wrap justify-center gap-6 relative">
         {skills.map((skill) => (
           <SkillNode key={skill} label={skill} color={color} />
         ))}
@@ -79,9 +84,9 @@ function PillarHead({
   color,
 }: {
   title: string
-  color: "blue" | "green" | "purple"
+  color: PillarColor
 }) {
-  const colors = {
+  const colors: Record<PillarColor, string> = {
     blue: "bg-blue-100 border-blue-400 text-blue-900",
     green: "bg-green-100 border-green-400 text-green-900",
     purple: "bg-purple-100 border-purple-400 text-purple-900",
@@ -90,7 +95,7 @@ function PillarHead({
   return (
     <div
       className={[
-        "w-40 h-40 rounded-full",
+        "w-48 h-48 rounded-full",
         "flex items-center justify-center",
         "border-2 shadow-md",
         "text-center",
@@ -107,26 +112,44 @@ function SkillNode({
   color,
 }: {
   label: string
-  color: "blue" | "green" | "purple"
+  color: PillarColor
 }) {
-  const colors = {
+  const colors: Record<PillarColor, string> = {
     blue: "bg-blue-50 border-blue-300 text-blue-900",
     green: "bg-green-50 border-green-300 text-green-900",
     purple: "bg-purple-50 border-purple-300 text-purple-900",
   }
 
   return (
-    <div
-      className={[
-        "w-36 h-36 rounded-full",
-        "flex items-center justify-center",
-        "border shadow-sm",
-        "text-center px-4",
-        "transition hover:scale-105 hover:shadow-md",
-        colors[color],
-      ].join(" ")}
-    >
-      <span className="text-sm font-medium leading-snug">{label}</span>
+    <div className="relative flex flex-col items-center">
+      {/* small connector line above each node */}
+      <div className={`w-px h-6 ${lineColor(color)}`} />
+
+      <div
+        className={[
+          "w-36 h-36 rounded-full",
+          "flex items-center justify-center",
+          "border shadow-sm",
+          "text-center px-4",
+          "transition hover:scale-105 hover:shadow-md",
+          colors[color],
+        ].join(" ")}
+      >
+        <span className="text-sm font-medium leading-snug">{label}</span>
+      </div>
     </div>
   )
+}
+
+function lineColor(color: PillarColor) {
+  switch (color) {
+    case "blue":
+      return "bg-blue-200"
+    case "green":
+      return "bg-green-200"
+    case "purple":
+      return "bg-purple-200"
+    default:
+      return "bg-gray-200"
+  }
 }
