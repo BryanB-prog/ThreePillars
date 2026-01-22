@@ -37,20 +37,20 @@ export default function skiltree() {
           ]}
         />
 
-        <Pillar
-          title="Integration"
-          color="purple"
-          skills={[
-            "SQL & Relational Design",
-            "Data Pipelines",
-            "Version Control (Git)",
-            "Interpretability",
-            "Responsible Data Practices",
-            "Communicating Results",
-          ]}
-        />
+     function Pillar({ title, color, skills }: PillarProps) {
+  return (
+    <section className="relative flex flex-col items-center">
+      <PillarHead title={title} color={color} />
+
+      {/* vertical connector */}
+      <div className="w-px h-10 bg-gray-300" />
+
+      <div className="flex flex-wrap justify-center gap-6 relative">
+        {skills.map((skill) => (
+          <SkillNode key={skill} label={skill} color={color} />
+        ))}
       </div>
-    </main>
+    </section>
   )
 }
 
