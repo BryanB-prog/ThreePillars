@@ -199,29 +199,63 @@ const HomePage: React.FC = () => {
       </section>
 
 
-      <nav className="flex items-center gap-6 text-sm font-medium text-gray-700">
-  <a
-    href="/projects"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-gray-900"
-  >
-    Projects
-  </a>
+     // app/page.tsx (inside your main component)
 
-  <a
-    href="/skilltree"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-600 hover:underline"
-  >
-    View Skill &amp; Knowledge Tree
-  </a>
+<section id="featured" className="mt-16">
+  <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
+    <div className="grid gap-8 md:grid-cols-2 md:items-center">
+      {/* Text */}
+      <div>
+        <p className="text-sm font-medium text-zinc-600">Latest Project</p>
 
-  <a href="#about" className="hover:text-gray-900">
-    About
-  </a>
-</nav>
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight text-zinc-900">
+          Housing Affordability vs Income in Canada
+        </h2>
+
+        <p className="mt-3 leading-relaxed text-zinc-700">
+          A data-driven look at whether housing costs are rising faster than
+          after-tax income, with clear visualizations and a reproducible pipeline.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="/projects"
+            className="rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+          >
+            View Project
+          </a>
+
+          <a
+            href="/projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+          >
+            Open Projects Page ↗
+          </a>
+        </div>
+
+        {/* Tags (optional) */}
+        <div className="mt-6 flex flex-wrap gap-2">
+          {["Python", "Pandas", "StatsCan", "Visualization", "Reproducible"].map(
+            (tag) => (
+              <span
+                key={tag}
+                className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
+              >
+                {tag}
+              </span>
+            )
+          )}
+        </div>
+      </div>
+
+      {/* Visual / Preview */}
+      <div className="h-72 w-full rounded-2xl bg-zinc-200" />
+      {/* Later replace the div above with an <Image /> or a real preview card */}
+    </div>
+  </div>
+</section>
 
 
       {/* About section placeholder */}
@@ -233,6 +267,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
