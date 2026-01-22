@@ -90,7 +90,7 @@ function PillarHead({
   return (
     <div
       className={[
-        "w-48 h-48 rounded-full",
+        "w-40 h-40 rounded-full",
         "flex items-center justify-center",
         "border-2 shadow-md",
         "text-center",
