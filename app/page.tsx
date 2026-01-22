@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
            <nav className="flex items-center gap-6 text-sm font-medium">
        <nav className="flex items-center gap-6 text-sm font-medium">
       <a
-        href="/projects"
+        href="/project/page"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-zinc-900"
@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
   </a>
 
           <a
-            href="/skilltree/page.tsx"
+            href="/skilltree/page"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -243,6 +243,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
