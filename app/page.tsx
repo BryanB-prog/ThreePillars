@@ -27,9 +27,14 @@ const HomePage: React.FC = () => {
 
         {/* Right: Menu */}
         <nav className="flex items-center gap-6 text-gray-700">
-          <a href="#projects" className="hover:text-gray-900">
-            Projects
-          </a>
+          <a
+    href="/projects"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-zinc-800 hover:underline"
+  >
+    Projects
+  </a>
 
           <a
             href="/skilltree/page.tsx"
@@ -232,6 +237,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
