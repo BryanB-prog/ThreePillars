@@ -28,12 +28,15 @@ const HomePage: React.FC = () => {
         {/* Right: Menu */}
         <nav className="flex items-center gap-6 text-gray-700">
            <nav className="flex items-center gap-6 text-sm font-medium">
+       <nav className="flex items-center gap-6 text-sm font-medium">
       <a
-        href="/projects.tsx"
+        href="/projects"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-zinc-900"
       >
+        Projects
+      </a>
         Projects
       </a>
     Projects
@@ -240,6 +243,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
