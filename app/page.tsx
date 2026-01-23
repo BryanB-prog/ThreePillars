@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
     rel="noopener noreferrer"
     className="hover:text-gray-900"
   >
-    Projects
+   Resume
   </a>
 </nav>
 
@@ -270,6 +270,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
