@@ -9,7 +9,7 @@ function ResumeHeader() {
           <img
             src="/profile.jpg"
             alt="Profile"
-            className="w-16 h-16 rounded-full border-4 border-slate-500"
+            className="w-32 h-32 rounded-full border-4 border-slate-500"
           />
           <div>
             <h1 className="text-2xl font-semibold leading-tight">
