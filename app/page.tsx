@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
   </a>
 
   <a
-    href="/projects"
+    href="/resume"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-gray-900"
@@ -270,6 +270,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
