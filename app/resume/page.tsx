@@ -8,7 +8,7 @@ function ResumeHeader() {
         <div className="flex items-center gap-6">
           <img
             src="/profile.jpg"
-            alt="Profile"
+            alt=""
             className="w-32 h-32 rounded-full border-4 border-slate-500"
           />
           <div>
