@@ -2,9 +2,9 @@
 
 function ResumeHeader() {
   return (
-    <header className="bg-slate-800 text-white">
-      {/* The same width wrapper as the resume body */}
-      <div className="max-w-6xl mx-auto px-6 pt-7 pb-10 relative">
+    <header className="pt-10">
+      {/* This is the actual header BAR, centered like the resume body */}
+      <div className="max-w-6xl mx-auto bg-slate-800 text-white px-6 pt-7 pb-10 relative rounded-t-lg overflow-hidden">
         <div className="flex items-center gap-6">
           <img
             src="/profile.jpg"
@@ -19,12 +19,11 @@ function ResumeHeader() {
           </div>
         </div>
 
-        {/* Angled bottom edge that visually points toward the sidebar */}
+        {/* Angled cut */}
         <div className="absolute left-0 bottom-0 w-full h-10 overflow-hidden">
           <div
             className="w-full h-full bg-slate-800"
             style={{
-              // This creates a notch/angle similar to the example header
               clipPath: "polygon(0 0, 100% 0, 100% 100%, 22% 100%)",
             }}
           />
@@ -36,12 +35,12 @@ function ResumeHeader() {
 
 export default function ResumePage() {
   return (
-    <main className="min-h-screen bg-gray-100 py-10">
-      {/* Header is same width as the resume card */}
+    <main className="min-h-screen bg-gray-100 pb-10">
       <ResumeHeader />
 
+      {/* Resume body is the same width as the header */}
       <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-b-lg overflow-hidden md:grid md:grid-cols-[240px_1fr]">
-        {/* Sidebar slightly narrower */}
+        {/* LEFT SIDEBAR */}
         <aside className="bg-[#e8dfd6] p-6 text-sm">
           <section className="space-y-2">
             <h2 className="font-semibold uppercase text-xs tracking-wide">
@@ -73,7 +72,7 @@ export default function ResumePage() {
           </section>
         </aside>
 
-        {/* Main content wider by giving it more of the grid */}
+        {/* MAIN CONTENT */}
         <section className="p-8 md:p-10 space-y-7">
           <section>
             <h2 className="font-semibold border-b pb-1 mb-2">Summary</h2>
