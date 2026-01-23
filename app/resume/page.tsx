@@ -7,7 +7,7 @@ function ResumeHeader() {
       <div className="max-w-6xl mx-auto bg-slate-800 text-white px-6 pt-7 pb-10 relative rounded-t-lg overflow-hidden">
         <div className="flex items-center gap-6">
           <img
-            src="/me1.png"
+            src="/me1.jpg"
             alt=""
             className="w-32 h-32 rounded-full border-4 border-slate-500"
           />
