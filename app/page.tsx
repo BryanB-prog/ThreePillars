@@ -204,6 +204,16 @@ const HomePage: React.FC = () => {
       </section>
 
 
+
+
+
+      {/* About section placeholder */}
+      <section id="about" className="mt-10 max-w-3xl w-full">
+        {/* Add About content here */}
+      </section>
+    </div>
+  );
+};
 <section id="featured" className="mt-16">
   <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
     <div className="grid gap-8 md:grid-cols-2 md:items-center">
@@ -240,51 +250,43 @@ const HomePage: React.FC = () => {
 
         {/* Tags (optional) */}
         <div className="mt-6 flex flex-wrap gap-2">
-          {["Python", "Pandas", "StatsCan", "Visualization", "Reproducible"].map(
-            (tag) => (
-              <span
-                key={tag}
-                className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
-              >
-                {tag}
-              </span>
-            )
-          )}
+          {["Python", "Pandas", "StatsCan", "Visualization", "Reproducible"].map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
 
       {/* Visual / Preview */}
-     <div className="flex h-72 w-full gap-4">
-  <div className="flex-1 rounded-2xl overflow-hidden bg-zinc-200">
-    <Image
-      src="/IncomeVsHousingCosts.png"
-      alt="Income vs Housing Costs"
-      fill
-      className="object-cover"
-    />
-  </div>
+      <div className="flex h-72 w-full gap-4">
+        <div className="relative flex-1 overflow-hidden rounded-2xl bg-zinc-200">
+          <Image
+            src="/IncomeVsHousingCosts.png"
+            alt="Income vs Housing Costs"
+            fill
+            className="object-cover"
+          />
+        </div>
 
-  <div className="flex-1 rounded-2xl overflow-hidden bg-zinc-200">
-    <Image
-      src="/HousingCostBurden.png"
-      alt="Housing Cost Burden"
-      fill
-      className="object-cover"
-    />
+        <div className="relative flex-1 overflow-hidden rounded-2xl bg-zinc-200">
+          <Image
+            src="/HousingCostBurden.png"
+            alt="Housing Cost Burden"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 </section>
 
-
-      {/* About section placeholder */}
-      <section id="about" className="mt-10 max-w-3xl w-full">
-        {/* Add About content here */}
-      </section>
-    </div>
-  );
-};
-
 export default HomePage;
+
 
 
 
