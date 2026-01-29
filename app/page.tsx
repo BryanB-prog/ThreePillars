@@ -1,22 +1,72 @@
-// app/page.tsx
 import React from "react";
 import Image from "next/image";
 import { Card } from "@/components/Card";
 
-const HomePage: React.FC = () => {
+export default function HomePage() {
   return (
-    <div className="max-h-screen flex flex-col items-center justify-start p-12">
-      {/* ... your intro + header ... */}
+    <div className="min-h-screen flex flex-col items-center bg-zinc-50 px-8 py-12">
+      {/* Intro */}
+      <section className="max-w-3xl w-full mb-10 rounded-xl bg-white p-6 shadow-sm border border-zinc-200">
+        <p className="text-zinc-600">
+          Hi, I’m Bryan. I’m a data scientist with an experienced background in IT.
+          I use science to help understand complex, human-centered problems.
+        </p>
 
-      {/* Projects / Pillars */}
-      <section id="projects" className="mt-6 w-full max-w-6xl">
+        <p className="text-zinc-600 mt-3">
+          This site reflects how I use data, the scientific method, and humanist
+          values to help make the world a better place.
+        </p>
+      </section>
+
+      {/* Header */}
+      <header className="flex items-center gap-6 mb-12">
+        <h1 className="text-4xl font-bold text-zinc-900">Three Pillars</h1>
+        <Image src="/logo1.png" alt="Logo" width={160} height={160} />
+
+        <nav className="flex items-center gap-6 text-sm font-medium text-zinc-700 ml-8">
+          <a href="/projects" className="hover:text-zinc-900">
+            Projects
+          </a>
+          <a
+            href="/skilltree"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            View Skill & Knowledge Tree
+          </a>
+          <a href="/resume" className="hover:text-zinc-900">
+            Resume
+          </a>
+        </nav>
+      </header>
+
+      {/* Pillars */}
+      <section id="projects" className="w-full max-w-6xl mb-16">
         <div className="grid gap-6 md:grid-cols-3">
-          {/* ... your Cards ... */}
+          <Card title="Precision">
+            <p className="text-sm text-zinc-700">
+              Statistical reasoning, uncertainty, inference, and rigorous
+              measurement.
+            </p>
+          </Card>
+
+          <Card title="Development">
+            <p className="text-sm text-zinc-700">
+              Machine learning, algorithms, modeling, and optimization.
+            </p>
+          </Card>
+
+          <Card title="Integration">
+            <p className="text-sm text-zinc-700">
+              Data pipelines, visualization, ethics, and deployment.
+            </p>
+          </Card>
         </div>
       </section>
 
-      {/* ✅ Featured section MUST be inside return */}
-      <section id="featured" className="mt-16 w-full max-w-6xl">
+      {/* Featured Project */}
+      <section id="featured" className="w-full max-w-6xl">
         <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             {/* Text */}
@@ -29,7 +79,8 @@ const HomePage: React.FC = () => {
 
               <p className="mt-3 leading-relaxed text-zinc-700">
                 A data-driven look at whether housing costs are rising faster than
-                after-tax income, with clear visualizations and a reproducible pipeline.
+                after-tax income, with clear visualizations and a reproducible
+                pipeline.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -51,18 +102,20 @@ const HomePage: React.FC = () => {
               </div>
 
               <div className="mt-6 flex flex-wrap gap-2">
-                {["Python", "Pandas", "StatsCan", "Visualization", "Reproducible"].map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                {["Python", "Pandas", "StatsCan", "Visualization", "Reproducible"].map(
+                  (tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
+                    >
+                      {tag}
+                    </span>
+                  )
+                )}
               </div>
             </div>
 
-            {/* Visual / Preview */}
+            {/* Images */}
             <div className="flex h-72 w-full gap-4">
               <div className="relative flex-1 overflow-hidden rounded-2xl bg-zinc-200">
                 <Image
@@ -85,11 +138,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* About */}
-      <section id="about" className="mt-10 max-w-3xl w-full" />
     </div>
   );
-};
-
-export default HomePage;
+}
