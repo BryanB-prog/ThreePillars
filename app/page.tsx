@@ -254,11 +254,9 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Visual / Preview */}
-      <div className="h-72 w-full rounded-2xl bg-zinc-200" />
-
-      
-      {/*Latest Project Images */}
-<Image
+     <div className="flex h-72 w-full gap-4">
+  <div className="flex-1 rounded-2xl overflow-hidden bg-zinc-200">
+    <Image
       src="/IncomeVsHousingCosts.png"
       alt="Income vs Housing Costs"
       fill
@@ -273,11 +271,8 @@ const HomePage: React.FC = () => {
       fill
       className="object-cover"
     />
-
-
-      
-    </div>
   </div>
+</div>
 </section>
 
 
@@ -290,6 +285,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
