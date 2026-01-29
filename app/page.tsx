@@ -255,7 +255,27 @@ const HomePage: React.FC = () => {
 
       {/* Visual / Preview */}
       <div className="h-72 w-full rounded-2xl bg-zinc-200" />
-      {/* Later replace the div above with an <Image /> or a real preview card */}
+
+      
+      {/*Latest Project Images */}
+<Image
+      src="/IncomeVsHousingCosts.png"
+      alt="Income vs Housing Costs"
+      fill
+      className="object-cover"
+    />
+  </div>
+
+  <div className="flex-1 rounded-2xl overflow-hidden bg-zinc-200">
+    <Image
+      src="/HousingCostBurden.png"
+      alt="Housing Cost Burden"
+      fill
+      className="object-cover"
+    />
+
+
+      
     </div>
   </div>
 </section>
@@ -270,6 +290,7 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
 
 
 
