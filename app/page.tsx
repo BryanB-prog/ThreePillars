@@ -42,28 +42,62 @@ export default function HomePage() {
       </header>
 
       {/* Pillars */}
-      <section id="projects" className="w-full max-w-6xl mb-16">
-        <div className="grid gap-6 md:grid-cols-3">
-          <Card title="Precision">
-            <p className="text-sm text-zinc-700">
-              Statistical reasoning, uncertainty, inference, and rigorous
-              measurement.
-            </p>
-          </Card>
+   
+<section id="projects" className="w-full max-w-6xl mb-16">
+  <div className="grid gap-6 md:grid-cols-3">
 
-          <Card title="Development">
-            <p className="text-sm text-zinc-700">
-              Machine learning, algorithms, modeling, and optimization.
-            </p>
-          </Card>
+    {/* PRECISION */}
+    <Card title="Precision">
+      <h3 className="text-lg font-semibold mb-3">Scientific & Statistical Rigor</h3>
+      <ul className="list-disc pl-5 space-y-2 text-sm text-zinc-700">
+        <li><strong>Probability theory & statistical foundations</strong> – random variables, distributions, uncertainty</li>
+        <li><strong>Statistical inference</strong> – estimation, hypothesis testing, confidence intervals</li>
+        <li><strong>Regression & classification</strong> – linear and logistic models, interpretability</li>
+        <li><strong>Model evaluation</strong> – bias–variance tradeoff, ROC, precision–recall, calibration</li>
+        <li><strong>Experimental design & causality</strong> – A/B testing, confounding, observational analysis</li>
+        <li><strong>Data quality & cleaning</strong> – missing data, outliers, validation rules</li>
+        <li><strong>Feature engineering</strong> – transformations, scaling, domain-informed features</li>
+        <li><strong>Exploratory Data Analysis (EDA)</strong> – statistical summaries and visual pattern discovery</li>
+        <li><strong>Uncertainty & reliability</strong> – error analysis, robustness, reproducibility</li>
+      </ul>
+    </Card>
 
-          <Card title="Integration">
-            <p className="text-sm text-zinc-700">
-              Data pipelines, visualization, ethics, and deployment.
-            </p>
-          </Card>
-        </div>
-      </section>
+    {/* DEVELOPMENT */}
+    <Card title="Development">
+      <h3 className="text-lg font-semibold mb-3">Modeling & Algorithms</h3>
+      <ul className="list-disc pl-5 space-y-2 text-sm text-zinc-700">
+        <li><strong>Supervised learning</strong> – regression, classification, training workflows</li>
+        <li><strong>Unsupervised learning</strong> – clustering, dimensionality reduction</li>
+        <li><strong>Tree-based models</strong> – Random Forests, Gradient Boosting</li>
+        <li><strong>Model selection & tuning</strong> – cross-validation, hyperparameter search</li>
+        <li><strong>Optimization</strong> – gradient descent, loss functions, convergence</li>
+        <li><strong>Deep learning foundations</strong> – neural networks, representation learning</li>
+        <li><strong>Algorithmic thinking</strong> – abstraction, decomposition, solution design</li>
+        <li><strong>Computational complexity</strong> – scalability and performance tradeoffs</li>
+        <li><strong>Data structures</strong> – trees, graphs, hashing, indexing</li>
+        <li><strong>End-to-end ML pipelines</strong> – from problem formulation to trained models</li>
+      </ul>
+    </Card>
+
+    {/* INTEGRATION */}
+    <Card title="Integration">
+      <h3 className="text-lg font-semibold mb-3">Delivery & Human Context</h3>
+      <ul className="list-disc pl-5 space-y-2 text-sm text-zinc-700">
+        <li><strong>SQL & relational modeling</strong> – schema design, joins, indexing</li>
+        <li><strong>Data pipelines</strong> – ETL, reproducible workflows, automation</li>
+        <li><strong>Version control</strong> – Git, GitHub, collaboration workflows</li>
+        <li><strong>Data visualization</strong> – storytelling, dashboards, insight communication</li>
+        <li><strong>Ethics & fairness</strong> – bias, privacy, responsible data use</li>
+        <li><strong>Interpretability</strong> – explainable models, transparent reporting</li>
+        <li><strong>Stakeholder communication</strong> – translating technical results</li>
+        <li><strong>Deployment awareness</strong> – APIs, cloud basics, static & model hosting</li>
+        <li><strong>Documentation</strong> – READMEs, notebooks, technical writing</li>
+        <li><strong>End-to-end system integration</strong> – connecting data, models, and people</li>
+      </ul>
+    </Card>
+
+  </div>
+</section>
 
       {/* Featured Project */}
       <section id="featured" className="w-full max-w-6xl">
@@ -141,3 +175,4 @@ export default function HomePage() {
     </div>
   );
 }
+
