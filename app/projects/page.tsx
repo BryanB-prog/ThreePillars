@@ -23,6 +23,27 @@ export default function ProjectsPage() {
         {/* Main layout: Newest (left), Recent grid (right) */}
         <section className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* Newest */}
+          {
+  id: "Housing Costs",
+  title: "Housing Costs and Average Income Comparison",
+  blurb:
+    "An analysis of housing costs and average income",
+  tags: ["Housing", "Income", "Housing Crises", "JSON"],
+  demoUrl: "https://your-eco-server-site.vercel.app",
+  repoUrl: "https://github.com/YOURNAME/eco-server-configs",
+  codeSnippet: {
+    languageLabel: "json",
+    code: `{
+  "StackSizeMultiplier": 15.0,
+  "WeightMultiplier": 0.25,
+  "UseWaste": false
+}`
+  },
+  group: "recent"
+},
+
+
+          
           <div className="md:col-span-1">
             <h2 className="mb-3 text-xl font-medium">Newest</h2>
 
