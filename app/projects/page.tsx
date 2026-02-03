@@ -29,8 +29,8 @@ export default function ProjectsPage() {
   blurb:
     "An analysis of housing costs and average income",
   tags: ["Housing", "Income", "Housing Crises", "JSON"],
-  demoUrl: "https://your-eco-server-site.vercel.app",
-  repoUrl: "https://github.com/YOURNAME/eco-server-configs",
+  demoUrl: "three-pillars-sv6v.vercel.app",
+  repoUrl: "https://github.com/BryanB-prog/ThreePillars/tree/main/housingcosts",
   codeSnippet: {
     languageLabel: "json",
     code: `{
