@@ -1,0 +1,96 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Average and median market, total and after-tax income of individuals by selected demographic characteristics","11100091",,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110009101",1;2;13,"CURRENT - a cube available to the public and that is current","Annual","2012-01-01","2023-01-01","5",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",,""
+"2","Demographic characteristics",5,""
+"3","Sex",,""
+"4","Income concept",4,""
+"5","Statistics",,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Atlantic provinces","[1]","2","1","",,
+"1","Quebec","[24]","7","1","",,
+"1","Ontario","[35]","8","1","",,
+"1","Prairie provinces","[4]","9","1","",,
+"1","British Columbia","[59]","13","1","",,
+"1","Newfoundland and Labrador","[10]","3","2","",,
+"1","Prince Edward Island","[11]","4","2","",,
+"1","Nova Scotia","[12]","5","2","",,
+"1","New Brunswick","[13]","6","2","",,
+"1","Manitoba","[46]","10","9","",,
+"1","Saskatchewan","[47]","11","9","",,
+"1","Alberta","[48]","12","9","",,
+"1","Canada","[11124]","1","","",3,
+"2","Visible minority population","","2","1","",6,
+"2","Not a visible minority","","11","1","",,
+"2","Indigenous population","","12","1","",10,
+"2","Non-Indigenous population","","15","1","",,
+"2","Not a visible minority nor Indigenous","","16","1","",,
+"2","Immigrants","","17","1","",11,
+"2","Persons born in Canada","","20","1","",,
+"2","South Asian","","3","2","",7,
+"2","Chinese","","4","2","",,
+"2","Black","","5","2","",,
+"2","Filipino","","6","2","",,
+"2","Arab","","7","2","",,
+"2","Latin American","","8","2","",,
+"2","Southeast Asian","","9","2","",8,
+"2","Other visible minority","","10","2","",9,
+"2","First Nations","","13","12","",,
+"2","Métis","","14","12","",,
+"2","Recent immigrants (10 years or less)","","18","17","",11,
+"2","Very recent immigrants (5 years or less)","","19","17","",11,
+"2","All persons","","1","","",,
+"3","Males","","2","1","",,
+"3","Females","","3","1","",,
+"3","Both sexes","","1","","",,
+"4","Market income","","1","","",,
+"4","Total income","","2","","",,
+"4","After-tax income","","3","","",,
+"5","Number of persons","","1","","",,
+"5","Percentage with income","","2","","",,
+"5","Average income","","3","","",,
+"5","Average income (excluding zeros)","","4","","",12,
+"5","Median income","","5","","",,
+"5","Median income (excluding zeros)","","6","","",12,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"5200","Canadian Income Survey"
+
+"Subject Code","Subject Name"
+"11","Income, pensions, spending and wealth"
+
+"Note ID",Note
+1,"Source: Centre for Statistics on Housing and Income, Statistics Canada."
+2,"Data quality indicators are based on the coefficient of variation (CV) and number of observations. Quality indicators indicate the following: A - Excellent (CV between 0% and 2%); B - Very good (CV between 2% and 4%); C - Good (CV between 4% and 8%); D - Acceptable (CV between 8% and 16%); E - Use with caution (CV between 16% and 33.3% )."
+3,"Estimates for Canada do not include the territories."
+4,"The concept of income covers income received while a resident of Canada or as relevant for income tax purposes in Canada. Market income is the sum of earnings (from employment and net self-employment), net investment income, private retirement income, and the items under other income. It is also called income before taxes and transfers. Total income refers to income from all sources including government transfers and before deduction of federal and provincial income taxes. It may also be called income before tax (but after transfers). After-tax income is total income less income tax. It may also be called income after tax."
+5,"Persons aged 15 years and over beginning in 2022. Persons aged 16 years and over for years prior to 2022."
+6,"According to the Employment Equity Act, visible minorities are "persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in colour.""
+7,"For example, East Indian, Pakistani, Sri Lankan."
+8,"For example, Vietnamese, Cambodian, Laotian, Thai."
+9,"Includes visible minority groups not included elsewhere. These include West Asian, Korean, Japanese, persons with a write-in response such as Guyanese, West Indian, Tibetan, Polynesian, Pacific Islander, and persons who gave more than one visible minority group by checking two or more mark-in responses, for example, Black and South Asian."
+10,"Includes persons who reported having an Indigenous identity, that is, First Nations (North American Indian), Métis or Inuk (Inuit), or those who reported more than one identity. Excluded from the survey’s coverage are persons living on reserves and other Indigenous settlements in the provinces. Data on persons reporting being Inuit or having multiple identities are included in the Indigenous total but are not shown separately because of small sample sizes."
+11,"Refers to people who are, or have been, landed immigrants in Canada. A landed immigrant is a person who has been granted the right to live in Canada permanently by immigration authorities. Canadian citizens by birth and non-permanent residents (persons from another country who live in Canada and have a work or study permit, or are claiming refugee status, as well as family members living here with them) are not landed immigrants."
+12,"Persons who did not receive this type of income are excluded from calculations."
+13,"In recent years, the Canadian Income Survey (CIS) has introduced improvements to the methods and sources used to produce income estimates. Beginning with the 2021 reference year, CIS income data were produced from the Administrative Personal Income Masterfile, a comprehensive source of personal income data generated not only from T1 tax returns, but also from associated tax slips. CIS estimates for previous years were produced using T1 tax returns only. Please consult the document <a href=https://www150.statcan.gc.ca/n1/pub/75f0002m/75f0002m2023005-eng.htm rel="external noopener noreferrer" target="_blank">Improvements to the Canadian Income Survey Methodology for the 2021 Reference Year (opens new window)</a> for more information. More improvements were introduced with the 2022 reference year. Foremost among these improvements is a significant increase in the sample size for a large subset of the CIS content. The weighting methodology was also improved and the target population for income data was changed from persons aged 16 years and over to persons aged 15 years and over. Please consult the document <a href=https://www150.statcan.gc.ca/n1/pub/75f0002m/75f0002m2024005-eng.htm rel="external noopener noreferrer" target="_blank">Improvements to the Canadian Income Survey Methodology for the 2022 Reference Year (opens new window)</a> for more information."
+
+"Correction ID","Correction Date","Correction Note"
