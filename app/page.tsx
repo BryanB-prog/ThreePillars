@@ -48,7 +48,7 @@ export default function HomePage() {
 
     {/* ELECTRONICS */}
     <Card title="Electronics">
-      <h3 className="text-lg font-semibold mb-3">Scientific & Statistical Rigor</h3>
+      <h3 className="text-lg font-semibold mb-3">Electronics</h3>
       <ul className="list-disc pl-5 space-y-2 text-sm text-zinc-700">
         <li><strong>Sensors and Sensor Circuit Design</strong> – thermal sensors, sensor development and prototyping, thermistors, RTDs and thermocouples</li>
         <li><strong>Statistical inference</strong> – estimation, hypothesis testing, confidence intervals</li>
@@ -175,5 +175,6 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
