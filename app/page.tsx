@@ -46,11 +46,11 @@ export default function HomePage() {
 <section id="projects" className="w-full max-w-6xl mb-16">
   <div className="grid gap-6 md:grid-cols-3">
 
-    {/* ELECTRONICS */}
-    <Card title="Electronics">
+    {/* PRECISION */}
+    <Card title="Precision">
       <h3 className="text-lg font-semibold mb-3">Electronics</h3>
       <ul className="list-disc pl-5 space-y-2 text-sm text-zinc-700">
-        <li><strong>Sensors and Sensor Circuit Design</strong> – thermal sensors, sensor development and prototyping, thermistors, RTDs and thermocouples</li>
+        <li><strong></strong>Probability theory and statistical inference</strong></li>
         <li><strong>Statistical inference</strong> – estimation, hypothesis testing, confidence intervals</li>
         <li><strong>Regression & classification</strong> – linear and logistic models, interpretability</li>
         <li><strong>Model evaluation</strong> – bias–variance tradeoff, ROC, precision–recall, calibration</li>
@@ -175,6 +175,7 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
 
